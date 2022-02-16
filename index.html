@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./CSS/estilos.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="shortcut icon" href="../ROOT/MEDIA/LogoCirculoOK.png" type="image/x-icon">
+</head>
+<body>
+    <div id= "grilla" class="grid grid-style">
+        <div class="hijo1">
+            <header class="encabezado">
+                <img src="./MEDIA/LogoTransparente.png" alt="" width="250px" height="250px">
+                <p class="subtitulo">Registro de marcas y patentes, canciones, fonogramas y videos o películas cinematográficas</p>
+                <p class="subtitulo2">Derechos de autor y Copyright</p>
+                <i> Artículo 17, Costitución Nacional Argentina: "Todo autor o inventor es propietario exclusivo de su obra, invento o descubrimiento, por le término que lo acuerde la ley. (1853).-</i>
+            </header>
+        </div>
+        <div class="hijo2" id="section1">
+            <section id="inicio" class="border">
+                <nav>
+                    <ul class="Titulo__list">
+                        <li><a  class="menucolor" href="#">INICIO </a></li>
+                        <li><a  class="menucolor" href="./PAGES/marcas.html">MARCAS</a></li>
+                        <li><a  class="menucolor" href="./PAGES/musica.html">MUSICA</a></li>
+                        <li><a  class="menucolor" href="./PAGES/videos.html">VIDEOS</a></li>
+                        <li><a  class="menucolor" href="./PAGES/contacto.html">NOSOTROS</a></li>
+                    </ul>
+                </nav>
+                <div>
+                    <img src="./MEDIA/Marcas/DC2.jpg" class="img"> 
+                    <img src="./MEDIA/Musica/Tema3.jpg" class="img">
+                    <img src="./MEDIA/Videos/Corto3.jpg" class="img">
+                    <div  style="float: left;">
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/OF_rEVrQHvI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen> 
+                        </iframe>
+                    </div>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem nisi laudantium consectetur illo dignissimos nemo ex quia numquam reprehenderit, quas temporibus voluptatibus, non magni placeat excepturi eos at architecto itaque distinctio pariatur officia fugit voluptatum! Velit assumenda accusantium sed. Dicta, unde id placeat inventore voluptas accusantium reprehenderit rem quasi officia corporis iure veniam. Odit nostrum iste, doloremque totam enim ipsa mollitia accusamus quidem neque, accusantium sint fuga minima ad veniam. Officiis doloremque libero dolore autem eum? Nulla, eius vero voluptatibus placeat aut blanditiis repudiandae cupiditate animi amet recusandae quae ab in magni quo culpa quas commodi eaque ipsum, perspiciatis consequatur. 
+                    </p>
+                </div>
+            </section>
+        </div>
+        <div class="hijo3" id="section2">
+            <section id="formulario" class="border">
+                <div>
+                    <label for="FORMULARIO"> CONTACTO
+                        <form action="" method="get" enctype="text/plain">
+                            <div>
+                                <input type="text" name="" id="" placeholder="Nombre completo">
+                            </div>
+                            <div>
+                                <input type="email" name="" id="" placeholder="Correo electrónico">
+                            </div>
+                            <div> ESTADO CIVIL
+                                <select name="CampoEstadoCivil" id="EstadoCivil">
+                                    <option value="Inicial" disabled selected> Seleccione una opción</option>
+                                    <option value="Soltero">Soltero</option>
+                                    <option value="Casado">Casado</option>
+                                    <option value="Viudo">Viudo</option>
+                                    <option value="Divorciado">Divorciado</option>
+                                    <option value="Concubinato">Concubinato</option>
+                                    <option value="Otro">Otro</option>
+                                </select>
+                            </div>
+                            <div class="CheckList">¿QUE DESEO REGISTRAR? 
+                                <input type="radio" required name="CampoTipoRegistro" id="TipoRegistro">MARCA
+                                <input type="radio" name="CampoTipoRegistro" id="TipoRegistro">PATENTE
+                                <input type="radio" name="CampoTipoRegistro" id="TipoRegistro">CANCIÓN
+                                <input type="radio" name="CampoTipoRegistro" id="TipoRegistro">ALBUM
+                                <input type="radio" name="CampoTipoRegistro" id="TipoRegistro">FONOGRAMA
+                                <input type="radio" name="CampoTipoRegistro" id="TipoRegistro">VIDEO
+                                <input type="radio" name="CampoTipoRegistro" id="TipoRegistro">PELÍCULA
+                                <input type="radio" name="CampoTipoRegistro" id="TipoRegistro">OTRO
+                            </div>
+                            <div> DESEO SUSCRIBIRME AL NEWSLETTER
+                                <input type="checkbox" name="Suscribirme" id="SuscripcionNL">
+                            </div>
+                            <div> COMENTARIOS
+                                <p><textarea name="Comentario" id="ComentarioForm" cols="30" rows="10">Introduzca su comentario</textarea></p>
+                            </div>
+                            <input type="submit" value="ENVIAR">
+                            <input type="reset" value="BORRAR TODO">            
+                        </form>
+                    </label>
+                </div>
+            </section>
+        </div>
+        <div class="hijo4">
+            <footer class="border">
+                <ul>            
+                    <li><a href="https://www.google.com/maps"> Av. Figueroa Alcorta N°468, 5° Piso, Of. "D". Córdoba, Córdoba, Argentina. C.P.:5000</li> 
+                    <li> <a href="https://web.whatsapp.com/"> +54 351 2279427</li>
+                    <li> <a href="https://mail.google.com/"> swallach@pedernera-parrell.com</li>            
+                </ul> 
+                <p>
+                    © 2022 W Registros. Abogados y Compañia. Todos los derechos reservados.
+                </p>
+            </footer>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,197 @@
+html {font-size: 1rem}
+
+body {background-image: url(../MEDIA/Logos/Fondo1.jpg); 
+    color: white;}
+
+.encabezado {
+    grid-area: header;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+   }
+
+.subtitulo {color:#800E13; 
+    text-align: center; 
+    margin: 0px; 
+    font-size: 30px;}
+
+.subtitulo2 {text-align: center; 
+    color: #640D14; 
+    margin: 0px; 
+    font-size: 25px;}
+
+header i {text-align: center; 
+    color: #800E13; 
+    margin: 0px; 
+    font-size: 20px;}
+
+body {font-family: 'Playfair Display', serif;}
+
+.Titulo__list { 
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row; 
+    list-style-type: none;
+    margin-right: 100px; 
+    text-align: center; 
+    margin-left: 50px; 
+    font-size: 25px;
+}
+
+.menucolor {
+    color: #AD2831;
+}
+
+
+.img {
+    width: 200px;
+    height: 200px;
+    padding: 20px;
+}
+
+.imgperfil {
+    width: 200px;
+    height: 300px;
+    padding: 20px;
+}
+
+.espaciado {
+    padding: 30px;
+    border: 50px;
+}
+
+.imagenes {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.video {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px;
+    color: lightcoral;
+}
+
+label form {
+    text-decoration: underline;
+    line-height: 35px;
+}
+
+.img {
+    width: 300px;
+    height: 300px;
+    padding: 30px;
+}
+
+.imgperfil {
+    width: 200px;
+    height: 300px;
+    padding: 20px;
+}
+
+.espaciado {
+    padding: 30px;
+    border: 50px;
+}
+
+.mapa {
+    grid-area: mapa;
+    display: flex;
+    align-items: flex-end;
+    justify-content: right;
+}
+
+/* aca declaramos la grilla y armamos el layout de la pagina */
+#grilla {
+    display: grid;
+
+    /*esto es para crear las columnas*/
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+
+    /*esto es para crear las filas y que se adapten al contenido*/
+    grid-template-rows: auto auto auto auto;
+
+    /*aca se arman los espacios que van a ocupar las columnas*/
+    grid-template-areas: "header header header header"
+        "imagenes imagenes imagenes imagenes"
+        "video video video video"
+        "footer footer footer footer";
+    gap: 20px;
+}
+
+/* el resto es solo modelar con flexbox y terminar con box-model. 
+Recuerda crear las medias queris para hacerlo responsive */
+
+
+/* aca vamos asignando las grid-areas y se aprovecha de estilar un poco los elementos internos */
+.hijo1 {
+    grid-area: header;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.encabezado {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.hijo2 {
+    grid-area: imagenes;
+}
+
+.hijo3 {
+    grid-area: video;
+}
+
+.hijo4 {
+    grid-area: video;
+}
+
+.hijo3 {
+    gap: 30px;
+    grid-template-rows: auto;
+    padding: 30px;
+    color: lightcoral;
+}
+
+.hijo4 {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    list-style-type: none;
+    margin-right: 100px;
+    margin-left: 50px;
+    font-size: 20px;
+}
+
+.marcas {
+    display: grid;
+    grid-template-rows: repeat(4, 100px);
+}
+
+.nosotros {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.footer {
+    grid-area: mapa;
+    display: flex;
+    align-items: flex-start;
+    justify-content: left;
+    
+
+}
+
+
