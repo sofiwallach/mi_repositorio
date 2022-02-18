@@ -1,0 +1,45 @@
+#GrillaC {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto auto auto auto auto;
+    grid-template-areas: 
+        "menu menu menu menu menu"
+        "header header header header header"
+        "imagenes imagenes imagenes imagenes imagenes"
+        "otros otros otros otros otros "
+        "footer footer footer footer footer";
+    gap: 20px;
+}
+
+.Chijo1 {
+    grid-area: menu;
+    color: lightcoral;
+    display: inline-block;
+    list-style-type: none;
+
+}
+
+.Chijo2 {
+    grid-area: header;
+    color: #640D14;
+    text-align: center;
+}
+
+.Chijo3 {
+    grid-area: imagenes;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.Chijo4 {
+    grid-area: otros;
+    color: #640D14;
+    text-align: center;
+}
+
+.Chijo5 {
+    grid-area: footer;
+    list-style-type: none
+    ;
+}
