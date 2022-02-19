@@ -1,3 +1,19 @@
+body {background-image: url(../MEDIA/Logos/Fondo1.jpg); 
+    color: white;}
+
+    
+.imgperfil {
+    width: 200px;
+    height: 300px;
+    padding: 20px;
+}
+
+
+.menucolor {
+    color: #AD2831;
+    list-style-type: none;
+}
+
 #GrillaC {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
@@ -30,6 +46,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+    
 }
 
 .Chijo4 {
@@ -43,3 +60,29 @@
     list-style-type: none
     ;
 }
+
+.rotate-center {
+	-webkit-animation: rotate-center 2s ease-in-out both;
+	        animation: rotate-center 2s ease-in-out both;
+}
+
+@-webkit-keyframes rotate-center {
+    0% {
+      -webkit-transform: rotate(0);
+              transform: rotate(0);
+    }
+    100% {
+      -webkit-transform: rotate(360deg);
+              transform: rotate(360deg);
+    }
+  }
+  @keyframes rotate-center {
+    0% {
+      -webkit-transform: rotate(0);
+              transform: rotate(0);
+    }
+    100% {
+      -webkit-transform: rotate(360deg);
+              transform: rotate(360deg);
+    }
+  }
